@@ -15,7 +15,7 @@ alias \
 
 # Colorize commands when possible.
 alias \
-    ls="ls -hN --color=auto --group-directories-first" \
+    ls="ls -hNA --color=auto --group-directories-first" \
     grep="grep --color=auto" \
     diff="diff --color=auto" \
     ccat="highlight --out-format=ansi"
@@ -28,8 +28,8 @@ alias \
     YT="youtube-viewer" \
     sdn="sudo shutdown -h now" \
     f="$FILE" \
-    e="$EDITOR" \
-    v="$EDITOR" \
+    e="$EDITOR &" \
+    v="$EDITOR &" \
     p="sudo pacman" \
     xi="sudo xbps-install" \
     xr="sudo xbps-remove -R" \
@@ -56,4 +56,6 @@ alias \
 
 # dotfiles
 alias \
-    config="/usr/bin/git --git-dir=$HOME/dotfiles/ --work-tree=$HOME"
+    config="/usr/bin/git --git-dir=$HOME/dotfiles/ --work-tree=$HOME" \
+    configp="config push origin main" \
+    configc="config commit"
